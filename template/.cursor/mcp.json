@@ -1,0 +1,49 @@
+{
+  "mcpServers": {
+    "verilog": {
+      "command": "npx",
+      "args": ["-y", "@zesun33/mcp-verilog"],
+      "env": { "MCP_VERILOG_IMAGE": "ghcr.io/zesun33/verilog" }
+    },
+    "rtl-review": {
+      "command": "npx",
+      "args": ["-y", "@zesun33/mcp-rtl-review"],
+      "env": { "MCP_RTL_REVIEW_IMAGE": "ghcr.io/zesun33/verilog" }
+    },
+    "yosys": {
+      "command": "npx",
+      "args": ["-y", "@zesun33/mcp-yosys"],
+      "env": { "MCP_YOSYS_IMAGE": "ghcr.io/zesun33/asic" }
+    },
+    "cocotb": {
+      "command": "npx",
+      "args": ["-y", "@zesun33/mcp-cocotb"],
+      "env": { "MCP_COCOTB_IMAGE": "ghcr.io/zesun33/verilog" }
+    },
+    "openroad": {
+      "command": "npx",
+      "args": ["-y", "@zesun33/mcp-openroad"],
+      "env": { "MCP_OPENROAD_IMAGE": "ghcr.io/zesun33/asic" }
+    },
+    "gds": {
+      "command": "npx",
+      "args": ["-y", "@zesun33/mcp-gds"],
+      "env": { "MCP_GDS_IMAGE": "ghcr.io/zesun33/asic" }
+    },
+    "formal": {
+      "command": "npx",
+      "args": ["-y", "@zesun33/mcp-formal"],
+      "env": { "MCP_FORMAL_IMAGE": "ghcr.io/zesun33/asic" }
+    },
+    "fpga": {
+      "command": "npx",
+      "args": ["-y", "@zesun33/mcp-fpga"],
+      "env": { "MCP_FPGA_IMAGE": "ghcr.io/zesun33/fpga" }
+    },
+    "spice": {
+      "command": "npx",
+      "args": ["-y", "@zesun33/mcp-spice"],
+      "env": { "MCP_SPICE_IMAGE": "ghcr.io/zesun33/spice" }
+    }
+  }
+}

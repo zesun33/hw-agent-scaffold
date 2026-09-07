@@ -1,0 +1,27 @@
+`timescale 1ns/1ps
+module counter_tb;
+  reg clk;
+  reg rst;
+  wire [3:0] count;
+
+  counter dut (.clk(clk), .rst(rst), .count(count));
+
+  initial begin
+    clk = 0;
+    forever #5 clk = ~clk;
+  end
+
+  initial begin
+    $dumpfile("counter.vcd");
+    $dumpvars(0, counter_tb);
+    rst = 1;
+    repeat (2) @(posedge clk);
+    rst = 0;
+    repeat (16) @(posedge clk);
+    if (count !== 4'd0) begin
+      $fatal(1, "expected wrap to 0, got %0d", count);
+    end
+    $display("PASS");
+    $finish;
+  end
+endmodule
