@@ -1,6 +1,6 @@
 {
   "name": "@zesun33/create-hw-agent",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "One-step npx installer: scaffold an AI hardware project with all zesun33 MCP servers",
   "type": "module",
   "license": "Apache-2.0",
@@ -8,7 +8,10 @@
     "create-hw-agent": "./bin/create-hw-agent.js",
     "hw-agent": "./bin/create-hw-agent.js"
   },
-  "files": ["bin", "template"],
+  "files": [
+    "bin",
+    "template"
+  ],
   "publishConfig": {
     "access": "public"
   },

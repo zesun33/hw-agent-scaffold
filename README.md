@@ -18,7 +18,7 @@ That is the whole install. It writes a project with starter RTL and a Cursor MCP
 
 Optional: `npx @zesun33/create-hw-agent doctor` checks node/podman.
 
-Then `make images` in the new project pulls `ghcr.io/zesun33/{verilog,asic,fpga,spice}`.
+Then `make images` in the new project pulls `ghcr.io/zesun33/{verilog,asic,fpga,spice}`. Servers default to those GHCR images; set `MCP_*_IMAGE=localhost/zesun33/...` only if you built locally.
 
 ```json
 {
@@ -32,4 +32,4 @@ Then `make images` in the new project pulls `ghcr.io/zesun33/{verilog,asic,fpga,
 }
 ```
 
-Until the scoped packages are published to npm, clone this repo and run `node bin/create-hw-agent.js ./my-asic`. MCP entries will 404 on npx until `npm publish` of each `@zesun33/mcp-*`.
+The packages are on npm. Clone this repo only if you are changing the scaffolder itself.

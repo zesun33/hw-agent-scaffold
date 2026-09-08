@@ -18,5 +18,3 @@ make sim      # iverilog the bundled counter
 ```
 
 Open this folder in Cursor. The agent can lint/sim/synth against the counter in `rtl/`.
-
-Until packages are on npm, clone the family from GitHub and point MCP `command` at each repo's `dist/index.js` (see each server README).

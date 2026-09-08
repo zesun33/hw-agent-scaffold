@@ -32,6 +32,10 @@ test("create-hw-agent writes MCP npx entries for all servers", () => {
     assert.ok(String(cfg.args[1]).startsWith("@zesun33/mcp-"));
   }
   assert.ok(fs.existsSync(path.join(dest, "rtl", "counter.v")));
+  const rtl = fs.readFileSync(path.join(dest, "rtl", "counter.v"), "utf8");
+  const tb = fs.readFileSync(path.join(dest, "tb", "counter_tb.v"), "utf8");
+  assert.match(rtl, /posedge clk or posedge rst/);
+  assert.match(tb, /@\(negedge clk\)/);
   fs.rmSync(dest, { recursive: true, force: true });
 });
 
