@@ -28,7 +28,7 @@ npm vs npx:
   npm install  keeps packages on disk (global or in node_modules).
   npx          runs a package without a global install.
   This scaffolder writes Cursor MCP entries that launch each server with
-  \`npx -y @zesun33/mcp-*\` so you do not clone eight repos.`);
+  \`npx -y @zesun33/mcp-*\` so you do not clone nine MCP repos.`);
 }
 
 function copyTemplate(dest) {
