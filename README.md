@@ -1,5 +1,26 @@
 # @zesun33/create-hw-agent
 
+<!-- BEGIN GENERATED PROJECT GUIDE -->
+
+## Purpose and first steps
+
+Create a starter RTL project and configuration for nine hardware MCP servers.
+
+**Who it is for:** New users who want a small RTL project and the hardware MCP configuration in one step.
+
+**First task:** Run `npx @zesun33/create-hw-agent my-asic`, inspect the generated files, then follow its README.
+
+**What to expect:** Starter counter RTL, a testbench, a Makefile, and a client configuration for all nine MCP servers.
+
+**Current scope:** Scaffolding is available from npm. Simulation and physical design still need a container runtime, images, and any relevant PDK.
+
+**Start here:** [Generated project instructions](template/README.md).
+
+**Related projects:** [hw-agent-tooling](https://github.com/zesun33/hw-agent-tooling), [eda-docker-images](https://github.com/zesun33/eda-docker-images), [mcp-verilog](https://github.com/zesun33/mcp-verilog).
+
+[Choose another project](https://github.com/zesun33/personal-projects/blob/main/GETTING_STARTED.md).
+<!-- END GENERATED PROJECT GUIDE -->
+
 > One-step installer for the zesun33 hardware-agent family.
 
 ```bash
