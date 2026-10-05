@@ -33,3 +33,7 @@ Then `make images` in the new project pulls `ghcr.io/zesun33/{verilog,asic,fpga,
 ```
 
 The packages are on npm. Clone this repo only if you are changing the scaffolder itself.
+
+## npm releases
+
+See [RELEASING.md](https://github.com/zesun33/hw-agent-scaffold/blob/main/RELEASING.md) for GitHub Actions dry runs and trusted publishing.
